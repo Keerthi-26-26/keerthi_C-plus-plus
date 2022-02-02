@@ -1,0 +1,23 @@
+//To write a program to demonstrate about constructors and destructors//
+
+#include <iostream>
+using namespace std;
+class test {
+public:
+int y, z;
+test()
+{
+cout<<"constructor called"<<endl;
+y = 17;
+z = 8;
+}
+~test(){ 
+cout<<"\ndestructor called"<<endl;}
+};
+int main()
+{
+test a;
+cout <<"the sum is: "<< a.y+a.z;
+return 1;
+}
+

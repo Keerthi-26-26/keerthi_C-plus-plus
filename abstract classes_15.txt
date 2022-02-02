@@ -1,0 +1,23 @@
+//Write a C++ Program on Abstract classes//
+
+#include <iostream>
+using namespace std;
+class A
+{
+public:
+virtual void test() = 0; 
+};
+class B : public A
+{
+public:
+void test()
+{
+cout << "Virtual function running in derived class!" << endl;
+}
+};
+int main(void)
+{
+B obj;
+obj.test();
+return 0;
+}
